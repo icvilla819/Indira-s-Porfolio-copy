@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding:0;
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    width:100%;
+    height:80px;
+    background:#000;
+    position:fixed;
+    z-index:2;
+    display: flex;
+    align-items: center;
+    color:#fff;
+    overflow: hidden;
+    left: 0;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.50);
+}
+
+.logo{
+    padding:0 15px;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    height:80px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.logo img{
+    height:60px;
+    width:60px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.links{
+    margin-left:auto;
+  
+}
+
+.links a{
+    color:#fff;
+    text-decoration: none;
+    padding:0 15px;
+    font-size: 18px;
+}
+
+.link a:last-child{
+    padding-right:0;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 24px;
+}
+
+section{
+    min-height:500px;
+    width:100%;
+    padding-top:80px;
+    padding-bottom:100px;
+}
+
+#greeting{
+    min-height:100vh;
+    text-align: center;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    color:white;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.greeting-wrap{
+    margin-top:-80px;
+}
+
+.wrapper{
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.gradient-switch{
+    background-color: #045de9 !important;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%) !important;
+}
+
+.icon{
+    padding-right: 15px;
+} 
+h2{
+    text-align: center;
+    font-size:40px;
+}
+#about p{
+    text-align: center;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.employers-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 55px;
+}
+.employers-images img{
+    width:20%;
+    display: block;
+    border:2px solid #e6e6e6;
+    height:300px;
+    padding: 25px;
+    border:2px solid #e6e6e6;
+    border-radius:6px;
+}
+.progects-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 55px;
+}
+.progects-images > div{
+    height:300px;
+    overflow: hidden;
+    text-align: center;
+    margin:15px;
+    flex-basis: 25%;
+    border:2px solid #e6e6e6;
+    border-radius:6px;
+}
+
+.progects-images img{
+    display: block;
+    width: 100%;
+}
+
+#contact{
+    text-align: center;
+}
+
+form{
+    border:2px solid #e6e6e6;
+    border-radius:6px;
+    min-height: 500px;
+    max-width: 600px;
+    margin:0 auto;
+    padding:15px;
+}
+
+form input{
+    display: block;
+    width:100%;
+    height:50px;
+    margin-bottom:15px;
+    border:2px solid #e6e6e6;
+    border-radius:6px;
+    font-size:20px;
+    padding-left:10px;
+}
+
+form textarea{
+    display: block;
+    width:100%;
+    margin-bottom:15px;
+    border:2px solid #e6e6e6;
+    border-radius:6px;
+    font-size:20px;
+    padding-left:10px;
+}
+
+
+button{
+    display: block;
+    width:100%;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    color:#fff;
+    padding:25px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #000;
+    margin-top:45px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #000;
+}
+
+.fa{
+    color: #7f53ac;
+}
+
+.gradient-color{
+    color:#045de9;
+}
+
+#portfolio{
+    background:#e6e6e6;
+}
+
+@media screen and (max-width:992px){
+    .progects-images > div{
+
+        flex-basis: 33.33%;
+    }
+
+    .employers-images img{
+        flex-basis: 33.33%;
+    }
+    
+}
+
+
+@media screen and (max-width:768px){
+    .progects-images > div{
+
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+    
+
+    .employers-images img{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
